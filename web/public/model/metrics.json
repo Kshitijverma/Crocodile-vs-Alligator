@@ -1,0 +1,26 @@
+{
+  "model": "vit_small_patch14_dinov2.lvd142m fine-tuned (int8 dynamic)",
+  "runtime": "onnxruntime-web (wasm)",
+  "groups": [
+    "alligator",
+    "caiman",
+    "crocodile",
+    "gharial"
+  ],
+  "test_photos": 240,
+  "threshold": 0.7,
+  "test_named_share": 0.675,
+  "test_named_accuracy": 0.9136,
+  "val_named_share": 0.6625,
+  "val_named_accuracy": 0.9434,
+  "test_top1_accuracy": 0.8167,
+  "test_top1_accuracy_per_group": {
+    "alligator": 0.9167,
+    "caiman": 0.7167,
+    "crocodile": 0.8,
+    "gharial": 0.8333
+  },
+  "fp32_test_top1_accuracy": 0.8,
+  "threshold_rule": "lowest threshold with val named accuracy >= 0.94",
+  "gate": "test named accuracy >= 0.9 and named share >= 0.5"
+}

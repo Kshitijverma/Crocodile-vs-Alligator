@@ -1,0 +1,8 @@
+torch>=2.4
+torchvision>=0.19
+onnx>=1.16
+onnxruntime>=1.19
+onnxscript
+pillow>=10
+requests>=2.31
+timm>=1.0
