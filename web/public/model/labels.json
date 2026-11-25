@@ -1,0 +1,9 @@
+{
+  "groups": [
+    "alligator",
+    "caiman",
+    "crocodile",
+    "gharial"
+  ],
+  "threshold": 0.7
+}
